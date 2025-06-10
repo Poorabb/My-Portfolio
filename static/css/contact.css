@@ -91,7 +91,7 @@
     position: relative;
 
 	padding-top: 1em;
-	padding-left: 4.5em;
+	padding-left: 1.5em;
 	display: flex;
 	justify-content: left;
 }
@@ -164,7 +164,7 @@
 
 .context {
 	background-color: #282828;
-	margin-left:65px;
+	margin-left: 65px;
 	width: 50%;
 	margin-top: 30px;
 	padding: 20px;
@@ -172,7 +172,7 @@
 	animation: fadeIn 3.5s;
 	color: #ffffff;
 	overflow: hidden;
-	text-wrap: nowrap;
+	text-wrap: wrap;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-shadow: #000000;
 	font-size: 18px;
@@ -190,9 +190,10 @@
 
 .probox1 {
 	background-color: #282828;
-	margin-left:65px;
+	margin-left: 65px;
 	width: 23%;
-    height: 275px;
+    height: auto;
+	min-height: 275px;
 	margin-top: 30px;
 	padding: 20px;
 	opacity: 70%;
@@ -219,14 +220,15 @@
     position: relative;
     width:128px;
     height: 128px;
-    margin-left: 90px;
+    margin-left: 150px;
 }
 
 .probox2 {
 	background-color: #282828;
-	margin-left:435px;
+	margin-left: 535px;
 	width: 23%;
-    height: 275px;
+    height: auto;
+	min-height: 275px;
 	margin-top: -275px;
 	padding: 20px;
 	opacity: 70%;
@@ -253,6 +255,102 @@
     position: relative;
     width:128px;
     height: 128px;
-    margin-left: 90px;
+    margin-left: 150px;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .context {
+        width: 60%;
+        margin-left: 30px;
+    }
+    
+    .probox1, .probox2 {
+        width: 30%;
+    }
+    
+    .probox2 {
+        margin-left: 40%;
+    }
+    img {
+        width: 40vh;
+        height: 40vh;
+        right: 97px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .context {
+        width: 70%;
+        margin-left: 20px;
+    }
+    
+    .probox1, .probox2 {
+        width: 40%;
+        margin-top: 20px;
+    }
+    
+    .probox2 {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .context {
+        width: 90%;
+        margin: 20px auto;
+        text-wrap: normal;
+    }
+    
+    .probox1, .probox2 {
+        width: 90%;
+        margin: 20px auto;
+        text-wrap: normal;
+    }
+    
+    .probox2 {
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 40vh;
+        height: 40vh;
+        right: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .context, .probox1, .probox2 {
+        width: 95%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    .contact {
+        top: 5px;
+        right: 5px;
+    }
+    .contact a {
+        font-size: 10px;
+        margin-right: 6px;
+    }
+    
+    img {
+        width: 30vh;
+        height: 30vh;
+        right: 38px;
+    }
+    
+    .typewriter h1 {
+        font-size: 1.2em;
+        left: 500px;
+    }
+}
