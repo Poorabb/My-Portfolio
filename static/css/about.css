@@ -273,6 +273,23 @@ b {
     .iconbox{
         display: none;
     }
+    @keyframes slider {
+        from {
+            width: 30%
+        }
+    
+        to {
+            width: 90%
+        }
+    }
+    @keyframes slider2 {
+        from {
+            width:70px;
+        }
+        to{
+            width:90%;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -347,6 +364,8 @@ b {
         font-size: 13px;
         padding: 8px;
         text-wrap: wrap;
+        overflow: hidden;
+
     }
     .photo1 img, .iconbox {
         width: 98vw;
@@ -387,6 +406,23 @@ b {
     .contact a {
         font-size: 10px;
         margin-right: 6px;
+    }
+    @keyframes slider {
+        from {
+            width: 30%
+        }
+    
+        to {
+            width: 100%
+        }
+    }
+    @keyframes slider2 {
+        from {
+            width:70px;
+        }
+        to{
+            width:100%;
+        }
     }
 }
 
